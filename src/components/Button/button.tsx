@@ -22,7 +22,7 @@ interface BaseButtonProps {
     href?: string
 }
 
-// 别名  添加原有属性 '&'表示混合属性
+// 别名  添加原有属性 '&'表示交叉属性  是将多个类型合并成一个类型
 type NativeButtonProps = BaseButtonProps & ButtonHTMLAttributes<HTMLElement>
 type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
