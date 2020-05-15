@@ -12,7 +12,7 @@ library.add(fas)
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Icon icon="coffee" theme= "danger" size="10x"/>
+      <Icon icon="coffee" theme= "primary" size="10x"/>
 
       <header className="App-header">
         <Menu defaultIndex='0' onSelect={(index) => {console.log(index)}} defaultOpenSubMenus={['2']}>
