@@ -27,7 +27,7 @@ const testVerProps: MenuProps = {
 }
 const generateMenu = (props: MenuProps) => {
   return (
-    <Menu {...props}>
+    <Menu {...props}> 
       <MenuItem>
         active
       </MenuItem>

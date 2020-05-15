@@ -3,11 +3,19 @@ import React from 'react';
 import Menu from './components/Menu/menu'
 import MenuItem from './components/Menu/menuItem'
 import SubMenu from './components/Menu/subMenu'
+import Icon from './components/Icon/icon'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fas)
 const App: React.FC = () => {
   return (
     <div className="App">
+      <Icon icon="coffee" theme= "danger" size="10x"/>
+
       <header className="App-header">
-        <Menu defaultIndex='0' onSelect={(index) => {console.log(index)}} mode="vertical" defaultOpenSubMenus={['2']}>
+        <Menu defaultIndex='0' onSelect={(index) => {console.log(index)}} defaultOpenSubMenus={['2']}>
           <MenuItem>link 0</MenuItem>
           <MenuItem>link 1</MenuItem>
           <SubMenu title="dropdown">
