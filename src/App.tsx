@@ -4,7 +4,7 @@ import Menu from './components/Menu/menu'
 import MenuItem from './components/Menu/menuItem'
 import SubMenu from './components/Menu/subMenu'
 import Icon from './components/Icon/icon'
-
+import Upload from './components/Upload/upload'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 
@@ -37,6 +37,13 @@ const App: React.FC = () => {
           Learn React
         </a>
       </header>
+
+      <Upload 
+        action='https://jsonplaceholder.typicode.com/posts'
+        onProgress={()=>{}}
+        onSuccess={()=>{}}
+        onError={()=>{}}
+      />
     </div>
   );
 }
